@@ -21,7 +21,7 @@ spec:
         app: sa-frontend                                  # 6
     spec:
       containers:
-        - image: liangrrr/sentiment-analysis-frontend:try
+        - image: liangrrr/sentiment-analysis-frontend:nmb
           imagePullPolicy: Always                         # 7
           name: sa-frontend
           ports:
