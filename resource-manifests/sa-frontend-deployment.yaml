@@ -11,10 +11,7 @@ spec:
   replicas: 2                                             # 2
   minReadySeconds: 15
   strategy:
-    type: Recreate                                   # 3
-    rollingUpdate: 
-      maxUnavailable: 2                                   # 4
-      maxSurge: 2                                         # 5
+    type: Recreate                                   # 3                                      # 5
   template:
     metadata:
       labels:
