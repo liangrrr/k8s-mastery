@@ -13,8 +13,8 @@ spec:
   strategy:
     type: RollingUpdate                                   # 3
     rollingUpdate: 
-      maxUnavailable: 1                                   # 4
-      maxSurge: 1                                         # 5
+      maxUnavailable: 2                                   # 4
+      maxSurge: 2                                         # 5
   template:
     metadata:
       labels:
