@@ -10,6 +10,8 @@ const style = {
     marginLeft: 12,
 };
 
+const webapp_url = process.env.REACT_APP_WEBAPP_URL || 'http://localhost:5000';
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +22,7 @@ class App extends Component {
     };
 
     analyzeSentence() {
-        fetch('http://localhost:8080/sentiment', {
+        fetch(webapp_url + '/sentiment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
