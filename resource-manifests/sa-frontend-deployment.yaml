@@ -23,6 +23,6 @@ spec:
           name: sa-frontend
           env:
             - name: REACT_APP_WEBAPP_URL
-              value: "http://sa-web-app"
+              value: "http://sa-web-app.svc.cluster.local"
           ports:
             - containerPort: 3000
